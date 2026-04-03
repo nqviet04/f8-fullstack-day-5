@@ -97,4 +97,41 @@ p {
 .cv ul {
   list-style-type: disc;
   padding-left: 18px;
+  font-size: 18px;
+}
+
+.cv ul li p {
+  font-size: 18px;
+}
+
+/* Menu */
+.header {
+  background: #3e5cca;
+  text-align: center;
+  font-size: 0;
+}
+
+.header .menu li {
+  display: inline-block;
+}
+
+.header .menu li a {
+  display: inline-block;
+  text-decoration: none;
+  padding: 25px 35px;
+  font-size: 18px;
+  color: #fff;
+  font-weight: 500;
+}
+
+.header .menu li a:hover {
+  color: #000;
+  background: #fff;
+  font-weight: 500;
+}
+
+.header .menu .active a {
+  color: #000;
+  background: #fff;
+  font-weight: 500;
 }
