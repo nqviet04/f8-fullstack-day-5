@@ -1,0 +1,95 @@
+<!doctype html>
+<html lang="vi">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>blog-post.html</title>
+    <link rel="stylesheet" href="./css/reset.css" />
+    <link rel="stylesheet" href="./css/style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <h1>Khám Phá CSS Pseudo Elements</h1>
+
+      <img
+        class="post-image"
+        src="https://images.unsplash.com/photo-1498050108023-c5249f4df085"
+        alt="Coding Image"
+      />
+
+      <p class="desc intro">
+        CSS Pseudo Elements là một trong những tính năng thú vị giúp lập trình
+        viên tạo ra các hiệu ứng trực quan đẹp mắt mà không cần thêm nhiều phần
+        tử HTML. Chúng giúp việc thiết kế giao diện trở nên linh hoạt và chuyên
+        nghiệp hơn.
+      </p>
+
+      <h2>1. ::first-letter</h2>
+
+      <p class="desc">
+        Pseudo element này cho phép tạo kiểu riêng cho chữ cái đầu tiên của đoạn
+        văn. Nó thường được sử dụng để tạo hiệu ứng drop cap giống như trong các
+        tạp chí hoặc báo chí chuyên nghiệp.
+      </p>
+
+      <h2>2. ::first-line</h2>
+
+      <p class="desc">
+        Với ::first-line, bạn có thể thay đổi màu sắc, kích thước hoặc
+        font-weight của dòng đầu tiên trong đoạn văn. Điều này giúp nội dung trở
+        nên nổi bật và dễ đọc hơn.
+      </p>
+
+      <blockquote>
+        Thiết kế đẹp không chỉ là hình thức, mà còn là trải nghiệm người dùng.
+      </blockquote>
+
+      <h2>3. ::selection</h2>
+
+      <p class="desc">
+        Khi người dùng bôi đen văn bản, pseudo element ::selection cho phép tùy
+        chỉnh màu nền và màu chữ của phần được chọn. Đây là chi tiết nhỏ nhưng
+        giúp tăng tính cá nhân hóa cho website.
+      </p>
+
+      <h2>4. Ứng dụng thực tế</h2>
+
+      <p class="desc">
+        Các pseudo elements thường được sử dụng trong blog, landing page,
+        website tin tức hoặc portfolio để tăng tính thẩm mỹ và cải thiện trải
+        nghiệm đọc nội dung.
+      </p>
+
+      <!-- Comment Section -->
+      <div class="comments">
+        <h2>Bình luận</h2>
+
+        <div class="comment">
+          <h3>Nguyễn Văn A</h3>
+          <div class="date">07/05/2026</div>
+          <p class="cmt">
+            Bài viết rất dễ hiểu và trực quan. Mình đã hiểu rõ hơn về ::before
+            và ::selection.
+          </p>
+        </div>
+
+        <div class="comment">
+          <h3>Trần Thị B</h3>
+          <div class="date">07/05/2026</div>
+          <p class="cmt">
+            Hiệu ứng hover ở phần comment nhìn rất mượt và hiện đại.
+          </p>
+        </div>
+
+        <div class="comment">
+          <h3>Lê Minh C</h3>
+          <div class="date">07/05/2026</div>
+          <p class="cmt">
+            Phần drop cap bằng ::first-letter nhìn giống blog chuyên nghiệp thật
+            sự.
+          </p>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

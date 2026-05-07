@@ -1,0 +1,196 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Form</title>
+    <link rel="stylesheet" href="./css/reset.css" />
+    <link rel="stylesheet" href="./css/style.css" />
+  </head>
+  <body>
+    <div class="wrapper">
+      <div class="card">
+        <div class="top-link">
+          Already a Member?
+          <a href="#">Sign in</a>
+        </div>
+        <div class="heading">
+          <h1 class="heading-title">Sign up</h1>
+          <div class="heading-steps">
+            <div class="inner-step active">
+              <div class="num">1</div>
+              <div class="desc">Basic Details</div>
+            </div>
+            <div class="line"></div>
+            <div class="inner-step">
+              <div class="num">2</div>
+              <div class="desc">Contact Details</div>
+            </div>
+            <div class="line"></div>
+            <div class="inner-step">
+              <div class="num">3</div>
+              <div class="desc">Verification</div>
+            </div>
+          </div>
+        </div>
+        <form action="" class="form" autocomplete="off">
+          <h2 class="form-title">Basic Details</h2>
+          <div class="form-box">
+            <div class="form-fields align-center">
+              <div class="form-group">
+                <label for="name" class="form-label required">Full Name</label>
+                <input
+                  class="form-input"
+                  type="text"
+                  id="name"
+                  placeholder="Enter Full Name"
+                  spellcheck="false"
+                  required
+                />
+              </div>
+              <div class="form-group photo">
+                <label for="profile-picture" class="form-img">
+                  <img
+                    src="./img/add-photo-img.webp"
+                    alt="Add photo"
+                    class="add-photo-img"
+                  />
+                </label>
+                <label for="profile-picture" class="form-label"
+                  >Add photo</label
+                >
+                <input
+                  class="form-input"
+                  type="file"
+                  id="profile-picture"
+                  accept="image/*"
+                  hidden
+                />
+              </div>
+            </div>
+            <div class="form-fields">
+              <div class="form-group full">
+                <label for="phone" class="form-label required"
+                  >Phone Number</label
+                >
+                <input
+                  class="form-input"
+                  type="tel"
+                  id="phone"
+                  placeholder="Enter Your Phone Number"
+                  spellcheck="false"
+                  required
+                />
+              </div>
+            </div>
+            <div class="form-fields">
+              <div class="form-group full">
+                <label for="email" class="form-label required">E-mail</label>
+                <input
+                  class="form-input"
+                  type="email"
+                  id="email"
+                  placeholder="Enter Your Email"
+                  spellcheck="false"
+                  required
+                />
+              </div>
+            </div>
+            <div class="form-fields">
+              <div class="form-group">
+                <label for="password" class="form-label required"
+                  >Password</label
+                >
+                <input
+                  class="form-input"
+                  type="password"
+                  id="password"
+                  placeholder="Enter Your Password"
+                  required
+                />
+              </div>
+              <div class="form-group">
+                <label for="confirm-password" class="form-label required"
+                  >Confirm Password</label
+                >
+                <input
+                  class="form-input"
+                  type="password"
+                  id="confirm-password"
+                  placeholder="Confirm Your Password"
+                  required
+                />
+              </div>
+            </div>
+            <div class="form-fields">
+              <div class="form-group">
+                <label for="birthday" class="form-label">Date Of Birth</label>
+                <input class="form-input" type="date" id="birthday" />
+              </div>
+              <div class="form-group radio">
+                <label for="gender" class="form-label required">Gender</label>
+                <div class="radio-group">
+                  <label>
+                    <input type="radio" name="gender" id="male" checked />Male
+                  </label>
+                  <label>
+                    <input type="radio" name="gender" id="female" />Female
+                  </label>
+                  <label>
+                    <input type="radio" name="gender" id="other" /> Other
+                  </label>
+                </div>
+              </div>
+            </div>
+            <div class="form-fields">
+              <div class="form-group full">
+                <label for="address" class="form-label">Address</label>
+                <input
+                  class="form-input"
+                  type="text"
+                  id="address"
+                  placeholder="Enter Your Address"
+                  spellcheck="false"
+                />
+              </div>
+            </div>
+          </div>
+          <h2 class="form-title">Communication Preferences</h2>
+          <div class="form-box">
+            <div class="form-fields checkbox">
+              <div class="form-group checkbox full">
+                <label for="preference" class="preference"></label>
+                <div class="newsletter">
+                  <label class="form-label">
+                    <input
+                      type="checkbox"
+                      name="preference"
+                      value="newsletter"
+                      checked
+                    />
+                    Subscribe to Newsletter
+                  </label>
+                </div>
+                <div class="email">
+                  <label class="form-label">
+                    <input type="checkbox" name="preference" value="emails" />
+                    Receive Promotional Emails
+                  </label>
+                </div>
+                <div class="update">
+                  <label class="form-label">
+                    <input type="checkbox" name="preference" value="updates" />
+                    Get Product Updates
+                  </label>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="form-btn">
+            <button class="btn">Save & Continue</button>
+          </div>
+        </form>
+      </div>
+    </div>
+  </body>
+</html>

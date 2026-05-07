@@ -1,0 +1,218 @@
+<!doctype html>
+<html lang="vi">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>blog-post.html</title>
+    <style>
+      .container {
+        width: 80%;
+        max-width: 1000px;
+        margin: 40px auto;
+        background: white;
+        padding: 40px;
+        border-radius: 12px;
+        box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+      }
+
+      h1 {
+        font-size: 42px;
+        margin-bottom: 20px;
+        color: #222;
+        text-align: center;
+      }
+
+      /* Dùng :not() để style tất cả heading ngoại trừ h1 */
+      h2:not(h1),
+      h3:not(h1) {
+        color: #0b6efd;
+        margin-top: 30px;
+        margin-bottom: 10px;
+        border-left: 5px solid #0b6efd;
+        padding-left: 10px;
+      }
+
+      .post-image {
+        width: 100%;
+        border-radius: 10px;
+        margin: 20px 0;
+      }
+
+      p {
+        margin-bottom: 20px;
+        text-align: justify;
+      }
+
+      /* Drop cap cho đoạn đầu tiên */
+      .intro::first-letter {
+        font-size: 60px;
+        font-weight: bold;
+        color: #0b6efd;
+        float: left;
+        line-height: 1;
+        margin-right: 10px;
+      }
+
+      /* Làm nổi bật dòng đầu tiên */
+      p::first-line {
+        font-weight: bold;
+        color: #444;
+      }
+
+      /* Tùy chỉnh khi bôi đen */
+      ::selection {
+        background: #0b6efd;
+        color: white;
+      }
+
+      /* Blockquote */
+      blockquote {
+        background: #f0f7ff;
+        padding: 20px;
+        margin: 25px 0;
+        border-left: 5px solid #0b6efd;
+        position: relative;
+        font-style: italic;
+      }
+
+      /* Thêm dấu ngoặc kép */
+      blockquote::before {
+        content: "❝";
+        font-size: 60px;
+        color: #0b6efd;
+        position: absolute;
+        top: -10px;
+        left: 10px;
+        opacity: 0.3;
+      }
+
+      /* nth-of-type */
+      p:nth-of-type(odd) {
+        background: #fafafa;
+        padding: 10px;
+        border-radius: 6px;
+      }
+
+      p:nth-of-type(even) {
+        background: #eef5ff;
+        padding: 10px;
+        border-radius: 6px;
+      }
+
+      /* Comment section */
+      .comments {
+        margin-top: 50px;
+      }
+
+      .comment {
+        background: #f9f9f9;
+        padding: 15px;
+        border-radius: 10px;
+        margin-bottom: 15px;
+        transition: 0.3s;
+        border-left: 4px solid transparent;
+      }
+
+      /* Hover effect */
+      .comment:hover {
+        transform: translateX(8px);
+        background: #eef5ff;
+        border-left: 4px solid #0b6efd;
+      }
+
+      .comment h4 {
+        margin-bottom: 5px;
+        color: #0b6efd;
+      }
+
+      .date {
+        font-size: 13px;
+        color: gray;
+        margin-bottom: 10px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <h1>Khám Phá CSS Pseudo Elements</h1>
+
+      <img
+        class="post-image"
+        src="https://images.unsplash.com/photo-1498050108023-c5249f4df085"
+        alt="Coding Image"
+      />
+
+      <p class="intro">
+        CSS Pseudo Elements là một trong những tính năng thú vị giúp lập trình
+        viên tạo ra các hiệu ứng trực quan đẹp mắt mà không cần thêm nhiều phần
+        tử HTML. Chúng giúp việc thiết kế giao diện trở nên linh hoạt và chuyên
+        nghiệp hơn.
+      </p>
+
+      <h2>1. ::first-letter</h2>
+
+      <p>
+        Pseudo element này cho phép tạo kiểu riêng cho chữ cái đầu tiên của đoạn
+        văn. Nó thường được sử dụng để tạo hiệu ứng drop cap giống như trong các
+        tạp chí hoặc báo chí chuyên nghiệp.
+      </p>
+
+      <h2>2. ::first-line</h2>
+
+      <p>
+        Với ::first-line, bạn có thể thay đổi màu sắc, kích thước hoặc
+        font-weight của dòng đầu tiên trong đoạn văn. Điều này giúp nội dung trở
+        nên nổi bật và dễ đọc hơn.
+      </p>
+
+      <blockquote>
+        Thiết kế đẹp không chỉ là hình thức, mà còn là trải nghiệm người dùng.
+      </blockquote>
+
+      <h2>3. ::selection</h2>
+
+      <p>
+        Khi người dùng bôi đen văn bản, pseudo element ::selection cho phép tùy
+        chỉnh màu nền và màu chữ của phần được chọn. Đây là chi tiết nhỏ nhưng
+        giúp tăng tính cá nhân hóa cho website.
+      </p>
+
+      <h3>4. Ứng dụng thực tế</h3>
+
+      <p>
+        Các pseudo elements thường được sử dụng trong blog, landing page,
+        website tin tức hoặc portfolio để tăng tính thẩm mỹ và cải thiện trải
+        nghiệm đọc nội dung.
+      </p>
+
+      <!-- Comment Section -->
+      <div class="comments">
+        <h2>Bình luận</h2>
+
+        <div class="comment">
+          <h4>Nguyễn Văn A</h4>
+          <div class="date">07/05/2026</div>
+          <p>
+            Bài viết rất dễ hiểu và trực quan. Mình đã hiểu rõ hơn về ::before
+            và ::selection.
+          </p>
+        </div>
+
+        <div class="comment">
+          <h4>Trần Thị B</h4>
+          <div class="date">07/05/2026</div>
+          <p>Hiệu ứng hover ở phần comment nhìn rất mượt và hiện đại.</p>
+        </div>
+
+        <div class="comment">
+          <h4>Lê Minh C</h4>
+          <div class="date">07/05/2026</div>
+          <p>
+            Phần drop cap bằng ::first-letter nhìn giống blog chuyên nghiệp thật
+            sự.
+          </p>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
